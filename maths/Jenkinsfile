@@ -44,15 +44,15 @@ pipeline {
                 rtMavenDeployer (
                     id: "MAVEN_DEPLOYER",
                     serverId: "test",
-                    releaseRepo: "exmaple-repo-local",
-                    snapshotRepo: "exmaple-repo-local"
+                    releaseRepo: "example-repo-local",
+                    snapshotRepo: "example-repo-local"
                 )
 
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
                     serverId: "test",
-                    releaseRepo: "exmaple-repo-local",
-                    snapshotRepo: "exmaple-repo-local"
+                    releaseRepo: "example-repo-local",
+                    snapshotRepo: "example-repo-local"
                 )
             }
         }
