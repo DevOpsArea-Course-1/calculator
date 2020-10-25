@@ -44,8 +44,8 @@ pipeline {
                 rtMavenDeployer (
                     id: "MAVEN_DEPLOYER",
                     serverId: "ARTIFACTORY_SERVER",
-                    releaseRepo: "libs-release-local",
-                    snapshotRepo: "libs-snapshot-local"
+                    releaseRepo: "exmaple-repo-local",
+                    snapshotRepo: "exmaple-repo-local"
                 )
 
                 rtMavenResolver (
