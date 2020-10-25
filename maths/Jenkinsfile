@@ -43,14 +43,14 @@ pipeline {
 
                 rtMavenDeployer (
                     id: "MAVEN_DEPLOYER",
-                    serverId: "ARTIFACTORY_SERVER",
+                    serverId: "test",
                     releaseRepo: "exmaple-repo-local",
                     snapshotRepo: "exmaple-repo-local"
                 )
 
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
-                    serverId: "ARTIFACTORY_SERVER",
+                    serverId: "test",
                     releaseRepo: "exmaple-repo-local",
                     snapshotRepo: "exmaple-repo-local"
                 )
